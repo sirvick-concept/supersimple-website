@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ara- Ire Stiches</title>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-[#f5f3ef] text-[#3a2e2a]">
+
+  <!-- Header -->
+  <header class="w-full bg-[#f5f3ef] shadow-md fixed top-0 left-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold tracking-wide"><b><i>ARA-IRE STICHES</i></b></h1>
+
+      <!-- Hamburger Menu (Mobile) -->
+       <div class="md:hidden">
+      <input type="checkbox" id="menu-toggle" class="hidden peer">
+      <label for="menu-toggle" class="md:hidden cursor-pointer text-3xl font-bold text-[#3a2e2a]">
+        ☰
+      </label>
+<!-- <p>class="peer-checked:block hidden bg-[#f5f3ef] md:hidden border-t border-gray-300"</p> -->
+      <!-- Mobile Menu -->
+    <div class="absolute left-0 top-full w-48 bg-[#f5f3ef] border-t border-gray-300 hidden peer-checked:flex flex-col items-center space-y-4 py-4 text-lg">
+      <nav class="flex flex-col items-center space-y-4 py-4 text-lg">
+        <a href="#" class="hover:text-[#a67c52]" onclick="document.getElementById('menu-toggle').checked=false">Home</a>
+        <a href="#about" class="hover:text-[#a67c52]" onclick="document.getElementById('menu-toggle').checked=false">About</a>
+        <a href="#gallery" class="hover:text-[#a67c52]" onclick="document.getElementById('menu-toggle').checked=false">Gallery</a>
+        <a href="#services" class="hover:text-[#a67c52]" onclick="document.getElementById('menu-toggle').checked=false">Services</a>
+        <a href="#contact" class="hover:text-[#a67c52]" onclick="document.getElementById('menu-toggle').checked=false">Contact</a>
+      </nav>
+    </div>
+    </div>
+
+      <!-- Navigation -->
+      <nav class="hidden md:flex space-x-8 text-lg">
+        <a href="#" class="hover:text-[#a67c52]">Home</a>
+        <a href="#about" class="hover:text-[#a67c52]">About</a>
+        <a href="#gallery" class="hover:text-[#a67c52]">Gallery</a>
+        <a href="#services" class="hover:text-[#a67c52]">Services</a>
+        <a href="#contact" class="hover:text-[#a67c52]">Contact</a>
+      </nav>
+    </div>
+
+    
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col md:flex-row items-center justify-between px-6 py-16 mt-20 bg-[#eae3dc]">
+    <div class="md:w-1/2 mb-8 md:mb-0">
+      <img src="/image/hero.jpg" alt="Fashion Stylist" class="rounded-2xl shadow-lg mx-auto">
+    </div>
+    <div class="md:w-1/2 text-center md:text-left space-y-6">
+      <h2 class="text-4xl font-bold">Redefining Personal Style with Elegance</h2>
+      <p class="text-lg">Transform your wardrobe and confidence with a touch of professional styling.</p>
+      <a href="#contact" class="inline-block bg-[#a67c52] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#8c6845] transition">Book a Session</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto px-6 py-16">
+    <div class="flex flex-col md:flex-row items-center gap-10">
+      <div class="md:w-1/2">
+        <img src="/image/ceo.png" alt="About Me" class="rounded-full shadow-lg h-100 w-100">
+      </div>
+      <div class="md:w-1/2 space-y-6">
+        <h3 class="text-3xl font-bold">About Us</h3>
+        <p class="text-lg leading-relaxed text-justify">
+          We are a professional fashion designer with a passion for creating timeless and elegant style. With years of experience in the fashion
+          industry, we specialize in designing bespoke outfits that reflect individuality, sophistication, and modern trends. Our work combines
+          creativity, precision, and attention to detail, ensuring every piece not only looks beautiful but also tells a story. <br>
+          We are dedicated to helping clients express their personality and confidence through fashion. From personalized wardrobe consultations
+          to custom designs, our goal is to elevate your style and make fashion an empowering experience. <br>
+          Driven by innovation and a keen eye for aesthetics, we continuously explore new techniques, materials, and trends to deliver designs
+          that are unique, inspiring, and tailored to each client’s lifestyle.
+        </p>
+        <a href="#services" class="inline-block bg-[#3a2e2a] text-white px-6 py-3 rounded-full hover:bg-[#5b463e] transition">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-[#eae3dc] py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-10">My Services</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+             <img src="/image/Screenshot 2025-10-08 132702.jpg" alt="Gallery" class=" h-118 rounded-2xl hover:scale-105 transition duration-300">
+          <h4 class="text-2xl font-semibold mt-4 mb-3">Personal Styling</h4>
+          <p>Customized styling sessions to create looks that highlight your best features and personal taste.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+             <img src="/image/premium_photo-1683121263622-664434494177.avif" alt="Gallery" class="rounded-xl hover:scale-105 transition duration-300">
+          <h4 class="text-2xl font-semibold  mt-4 mb-3">Event Outfit Planning</h4>
+          <p>Perfect outfits curated for weddings, parties, and other special occasions that make you stand out.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+             <img src="/image/istockphoto-2161152347-612x612.jpg" alt="Gallery" class="rounded-xl hover:scale-105 transition duration-300">
+          <h4 class="text-2xl font-semibold  mt-4 mb-3">Wardrobe Consultation</h4>
+          <p>Revamp your closet and learn how to pair your clothes effortlessly for any occasion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="container mx-auto px-6 py-16 text-center">
+    <h3 class="text-3xl font-bold mb-10">Gallery</h3>
+    <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-6">
+      <img src="/image/a.JPG" alt="Gallery" class="rounded-xl hover:scale-105 transition duration-300">
+      <img src="/image/b.JPG" alt="Gallery" class="rounded-xl hover:scale-105 transition duration-300">
+      <img src="/image/istockphoto-1317560255-612x612.jpg" alt="Gallery" class="rounded-xl hover:scale-105 transition duration-300">
+      <img src="/image/d.JPG" alt="Gallery" class="rounded-xl hover:scale-105 transition duration-300">
+      <img src="/image/istockphoto-1358468286-612x612.jpg" alt="Gallery" class="rounded-xl hover:scale-105 transition duration-300">
+<img src="/image/istockphoto-1415317454-612x612.jpg" alt="Gallery" class="rounded-xl hover:scale-105 transition duration-300">
+<img src="/image/premium_photo-1664202526559-e21e9c0fb46a.avif" alt="Gallery" class="rounded-xl hover:scale-105 transition duration-300">
+<img src="/image/istockphoto-2209015082-612x612.webp" alt="Gallery" class="rounded-xl hover:scale-105 transition duration-300">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-[#3a2e2a] text-white py-16">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-10">
+      <div>
+        <h3 class="text-3xl font-bold mb-6">Contact Us</h3>
+        <p class="mb-4">Let’s create something beautiful together. Reach out for collaborations or bookings.</p>
+        <p>Email: Ara- Ire Stiches@email.com</p>
+        <p>Phone: +234 800 000 0000</p>
+        <!-- <div class="flex space-x-4 mt-4">
+          <a href="#" class="hover:text-[#a67c52]">Instagram</a>
+          <a href="#" class="hover:text-[#a67c52]">Pinterest</a>
+          <a href="#" class="hover:text-[#a67c52]">LinkedIn</a>
+        </div> -->
+        <div class="flex space-x-6 mt-4 text-xl">
+        <a href="#" class="hover:text-blue-500"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-green-500"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="hover:text-pink-500"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="hover:text-sky-400"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="hover:text-red-500"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#" class="hover:text-blue-500"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="hover:text-red-300"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+      </div>
+      <form class="bg-white text-[#3a2e2a] rounded-2xl p-8 shadow-md">
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold">Name</label>
+          <input type="text" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none" placeholder="Your name">
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold">Email</label>
+          <input type="email" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none" placeholder="Your email">
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold">Message</label>
+          <textarea class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none" rows="4" placeholder="Write your message"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-[#a67c52] text-white py-3 rounded-full font-semibold hover:bg-[#8c6845] transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#2a1e1a] text-gray-300 py-6 text-center">
+    <p>©2025 Ara-ire Stiches. All Rights Reserved. Designed by <i>Sir-vick Concept</i></p>
+  </footer>
+
+</body>
+</html>
